@@ -6,12 +6,13 @@
   <style>
     body {
       font-family: sans-serif;
-      background: #f2f2f2;
+      background: linear-gradient(135deg, #6b48ff, #ff8c00); /* تم جدید: گرادینت بنفش به نارنجی */
       margin: 0;
       padding: 0;
+      color: #fff; /* متن سفید برای هماهنگی با تم */
     }
     header, footer {
-      background: #333;
+      background: rgba(51, 51, 51, 0.8); /* پس‌زمینه تیره با شفافیت */
       color: white;
       text-align: center;
       padding: 1em;
@@ -21,11 +22,15 @@
       color: white;
       text-decoration: none;
     }
+    nav a:hover {
+      color: #ffcc00; /* رنگ نارنجی روشن برای هورر */
+    }
     section {
       padding: 1em;
       margin: 1em;
-      background: white;
+      background: rgba(255, 255, 255, 0.1); /* پس‌زمینه شفاف سفید */
       border-radius: 8px;
+      border: 1px solid #fff; /* حاشیه سفید */
     }
   </style>
 </head>
@@ -34,8 +39,8 @@
     <h1>Welcome to $SADA COIN Info Site</h1>
     <nav>
       <a href="#home">HOME</a>
-      <a href="about-sada.html">ABOUT SADA</a>
-      <a href="white-paper.html">WHITE PAPER</a>
+      <a href="#about">ABOUT SADA</a>
+      <a href="#white-paper">WHITE PAPER</a>
       <a href="#contact">CONTACT</a>
     </nav>
   </header>
@@ -50,7 +55,7 @@
     <p>Information about SADA goes here.</p>
   </section>
 
-  <section id="paper">
+  <section id="white-paper">
     <h2>WHITE PAPER</h2>
     <p>This section contains paper-based information or documents.</p>
   </section>
