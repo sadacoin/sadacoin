@@ -1,14 +1,51 @@
-<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8" />  <meta name="viewport" content="width=device-width, initial-scale=1" />  <title>white Paper - BridgeX</title>  <style>    body { font-family: Arial, sans-serif; max-width: 900px; margin: 20px auto; line-height: 1.6; padding: 0 15px; }    h1, h2, h3 { color: #333; }    ul { margin-left: 20px; }    nav a { margin-right: 15px; text-decoration: none; color: #007acc; }    nav a:hover { text-decoration: underline; }  </style></head><body>  <nav>    <a href="index.html">HOME</a>    <a href="index.html#about">ABOUT SADA</a>    <a href="white-paper.html">WHITE PAPER</a>    <a href="index.html#contact">CONTACT</a>  </nav>
-  <h1>BridgeX: Smart Interoperability Between Solana and Cardano</h1>
-  <h2>1. Abstract</h2>  <p>BridgeX is a cross-chain initiative designed to establish a decentralized, secure, and efficient bridge between the Solana and Cardano blockchains. The project enables smooth integration of smart contracts, token transfers, and cross-chain data communication, all powered by SADA COIN — the native token of the BridgeX ecosystem.</p>
-  <h2>2. Problem Statement</h2>  <ul>    <li>Absence of a reliable, fast, and trustless bridge between Solana and Cardano</li>    <li>Significant architectural differences (Solana's Sealevel VM vs Cardano's eUTxO model)</li>    <li>Current solutions rely heavily on centralized third parties or custodial services</li>    <li>Difficulty for developers to build cross-chain dApps between these two ecosystems</li>  </ul>
-  <h2>3. Our Solution</h2>  <p>BridgeX introduces a custom interoperability layer using smart contracts on Solana (Rust-based) and Plutus scripts on Cardano, allowing secure and fast asset transfers and messaging.</p>
-  <h3>Key Features:</h3>  <ul>    <li>Bridge SLP tokens from Solana to Cardano and vice versa</li>    <li>Cross-chain messaging protocol for dApps</li>    <li>Support for hybrid smart contracts spanning both chains</li>    <li>Native utility token: SADA COIN used for gas fees, governance, and staking</li>  </ul>
-  <h2>4. Technical Architecture</h2>  <ul>    <li>Custom-built bridge infrastructure (or potential integration with protocols like Wormhole)</li>    <li>Validator layer on Solana + Plutus-based validators on Cardano</li>    <li>Cross-chain verification using light consensus + Merkle/chain proofs</li>    <li>Wallet compatibility with Phantom (Solana) and Eternl/Nami (Cardano)</li>  </ul>
-  <h2>5. Use Cases</h2>  <ul>    <li>Cross-chain DeFi asset transfers between Solana and Cardano</li>    <li>NFT transfers and cross-chain ownership verification</li>    <li>Smart contracts split across both chains for complex dApps</li>    <li>DAOs with members and voting power across both networks</li>  </ul>
-  <h2>6. Tokenomics</h2>  <p><strong>Token Name:</strong> SADA COIN<br />     <strong>Ticker:</strong> SADA<br />     <strong>Total Supply:</strong> 10,000,000,000 (10 Billion)</p>    <p><strong>Allocation Breakdown:</strong></p>  <ul>    <li>15% – Core Team & Developers (vested)</li>    <li>20% – Initial Liquidity & Exchange Listings</li>    <li>10% – Airdrops & Early Community Growth</li>    <li>30% – Staking Rewards & Yield Incentives</li>    <li>25% – DAO Treasury & Ecosystem Development</li>  </ul>
-  <h2>7. Roadmap</h2>  <ul>    <li>Q3 2025 – Smart contract development (Solana devnet & Cardano testnet)</li>    <li>Q4 2025 – Launch beta version of the bridge with test token transfers</li>    <li>Q1 2026 – Mainnet deployment + Launch of SADA COIN utility</li>    <li>Q2 2026 – NFT bridge, hybrid contract support, and multi-wallet integration</li>    <li>Q3 2026 – Full DAO governance using SADA COIN holders’ votes</li>  </ul>
-  <h2>8. Team & Advisors</h2>  <ul>    <li>Blockchain engineers specialized in Rust (Solana) and Haskell/Plutus (Cardano)</li>    <li>Cross-chain architecture consultants</li>    <li>DeFi and interoperability advisors</li>  </ul>
-  <h2>9. Risks & Challenges</h2>  <ul>    <li>Protocol incompatibilities between Solana and Cardano</li>    <li>Cross-chain bridge security concerns (hacks, exploits)</li>    <li>Regulatory uncertainty surrounding cross-chain token transfers</li>    <li>Network congestion or cost fluctuations on either chain</li>  </ul>
-  <h2>10. Conclusion</h2>  <p>SADA COIN and the BridgeX protocol represent a bold step toward seamless interoperability between two major blockchain networks. By leveraging decentralized infrastructure and cutting-edge smart contract development, BridgeX will open up new opportunities for developers, investors, and users across Solana and Cardano alike.</p>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>White Paper - BridgeX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.6;
+      padding: 0 15px;
+      background: linear-gradient(135deg, #0033cc 0%, #7b2ff7 100%);
+      color: white;
+    }
+    h1, h2, h3 {
+      color: #e0e0ff;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #c0c0ff;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+    p, li {
+      color: #f0f0ff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="index.html#about">ABOUT SADA</a>
+    <a href="white-paper.html">WHITE PAPER</a>
+    <a href="index.html#contact">CONTACT</a>
+  </nav>
+  <h1>BridgeX: Smart Interoperability Between Solana and Cardano</h1>
+  <h2>1. Abstract</h2>
+  <p>BridgeX is a cross
+
